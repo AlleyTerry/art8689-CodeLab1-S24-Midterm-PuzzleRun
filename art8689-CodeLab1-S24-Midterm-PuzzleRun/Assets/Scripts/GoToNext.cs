@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GameManager2 : MonoBehaviour
+public class GoToNext : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,4 +16,9 @@ public class GameManager2 : MonoBehaviour
     {
         
     }
+
+    public void GoToNextLevel()
+     {
+         SceneManager.LoadScene(1);
+     }
 }

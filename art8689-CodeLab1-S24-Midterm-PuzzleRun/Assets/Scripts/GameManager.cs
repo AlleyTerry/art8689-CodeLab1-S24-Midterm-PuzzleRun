@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
         {
             isInGame = false;
             levelTimer = true;
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
             SetHighScore();
             
         }

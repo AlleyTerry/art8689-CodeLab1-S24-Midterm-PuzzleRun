@@ -15,7 +15,7 @@ public class CameraFollow : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-0
+
 DontDestroyOnLoad(gameObject);
         }
         else
