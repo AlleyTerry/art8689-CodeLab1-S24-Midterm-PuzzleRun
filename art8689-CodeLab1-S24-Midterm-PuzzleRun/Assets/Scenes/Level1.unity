@@ -707,7 +707,7 @@ Transform:
   m_GameObject: {fileID: 220405433}
   serializedVersion: 2
   m_LocalRotation: {x: 0.11879134, y: 0.6252938, z: -0.11935281, w: 0.76200473}
-  m_LocalPosition: {x: -2.07, y: 1.68, z: -2.35}
+  m_LocalPosition: {x: -1.87, y: 1.29, z: -2.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1264,7 +1264,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -3615963561670118163, guid: 7a4c23176898ce8438b87acda9d570fc, type: 3}
+      - m_Target: {fileID: 3490859099016891516, guid: 024a21cf8ae967748a73dac9c5927cf8, type: 3}
         m_TargetAssemblyTypeName: Goal, Assembly-CSharp
         m_MethodName: ResetStage
         m_Mode: 1
@@ -1377,6 +1377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4427c4204b956a8488541302808f72ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goalbutton: {fileID: 1788733874}
   camera1: {fileID: 963194225}
   camera2: {fileID: 220405433}
   managerObject: {fileID: 777931231}
@@ -1871,7 +1872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1788733875
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1940,6 +1941,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: LoadGame, Assembly-CSharp
         m_MethodName: NextLevelLoad
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1788733874}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

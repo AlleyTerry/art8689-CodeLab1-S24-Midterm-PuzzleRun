@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadGame : MonoBehaviour
 {
+    public GameObject goalbutton;
     private MoveableObjects loaderScript;
     public GameObject camera1;
     public GameObject camera2;
@@ -51,10 +53,12 @@ public class LoadGame : MonoBehaviour
 
     public void ResetLevel()
     {
-        //Camera.main.transform.parent = LoadGame.instance.managerObject.transform;
-        CameraFollow.instance.targetPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        
+        
         LoadGame.instance.camera2.SetActive(false);
         LoadGame.instance.camera1.SetActive(true);
+        LoadGame.instance.camera1.transform.parent = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        //CameraFollow.instance.targetPlayer = 
         //SceneManager.LoadScene(Goal.instance.levelNum);
         
       
