@@ -11,13 +11,16 @@ public class Goal : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
+        if (LoadGame.instance.camera2.activeInHierarchy == true)
+        {
+            levelNum++;
+            SceneManager.LoadScene(levelNum);
         
-        levelNum++;
-        SceneManager.LoadScene(levelNum);
         
+            LoadGame.instance.camera2.SetActive(false);
+            LoadGame.instance.camera1.SetActive(true);
+        }
         
-        LoadGame.instance.camera2.SetActive(false);
-        LoadGame.instance.camera1.SetActive(true);
         
     }
     
@@ -29,6 +32,8 @@ public class Goal : MonoBehaviour
         ASCIILevelLoader.instance.CurrentLevel++;
         ASCIILevelLoader.instance.CurrentLevel--;
         CameraFollow.instance.targetPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        LoadGame.instance.camera1.SetActive(true);
+        LoadGame.instance.camera1.SetActive(false);
         
     }
 

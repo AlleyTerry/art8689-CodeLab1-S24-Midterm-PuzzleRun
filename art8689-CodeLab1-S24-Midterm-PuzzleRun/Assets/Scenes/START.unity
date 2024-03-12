@@ -314,21 +314,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press Load Level FIRST To load the level
-
-
-    Use your cursor to move
-    blocks around to free the goal!
-
-
-    When you are done, Press Start Level and
-    use WASD to move the ball towards the goal
-
-
-    if you mess up, press switch
-    cam or reset level
-
-'
+  m_text: "Use your cursor to move blocks around to free the  yellow goal! \n\nWhen
+    you are done, Press Start Level and use WASD to move the ball towards the goal\n\nPress
+    Load Level to load the next level\n\nif you mess up, press switch cam or reset
+    level\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
